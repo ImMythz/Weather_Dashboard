@@ -4,19 +4,10 @@
 A weather application that allows you to search for a city and be provided the weather for that city
 
 ## User Story
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
+As a user, I want to be able to search a city and get the daily weather report. I also want to be able to the the 5-day forecast of the searched city. I also want my recent searches to remain below the input field.
 
 ## Screenshot
 <img src='docs\assets\images\Weather_Dashboard_Screenshot.png' alt='Weather Dashboard Screnshot'>
+
+## APIs Used
+OpenWeatherMap API
