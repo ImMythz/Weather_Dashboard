@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--unsure-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/cs/style.css">
     <title>Weather Dashboard</title>
 </head>
+
 <body>
     <header>
-
+        <div class="col-md-12" id="header">Weather Dashboard</div>
     </header>
 
-    <main>
-    </main>
- 
+    <aside class="row">
+        <form class="col-md-3 form-group" id="sideNav">
+            <h1 class="h5 font-weight-bold">Search for a City:</h1>
+            <div class="input-group">
+                <!-- Input filed for user to input city search -->
+                <input id="cityInput" class="form-control" type="text" placeholder="Enter City Name"
+                    aria-label="Enter City Name">
+                <!-- Creates and attaches button to search bar -->
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary rounded fa fa-search mr-5 br-1" aria-hidden="true"></button>
+                </div>
+            </div>
+            <!-- Where searched cities will append -->
+            <div id="searchedCity">
+                <ul id="cityList" class="m-0 p-0">
+                </ul>
+            </div>
+        </form>
+    </aside>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <main class="container col-md-9">
+
+        <!-- Row with Daily Weather -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div id="dailyWeather">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="forecastHeader">
+            <div class="col-md-12 ">
+                <!-- <h2>5 Day Forecast</h2> -->
+            </div>
+        </div>
+
+        <div class="row" id="fiveDayForecast"></div>
+
+    </main>
+
+    <!-- Key: 19fb7afc722496f115e7df602c287f5c -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
