@@ -8,7 +8,7 @@ As a user, I want to be able to search a city and get the daily weather report. 
 
 ## Screenshot
 <img src='docs\assets\images\Weather_Dashboard_Screenshot.png' alt='Weather Dashboard Screenshot'>
-<img src='docs\assets\images\Weather_Dashboard_Screenshot_2.png' alt='Weather Dashboard Screenshot Two'>
+<img src='docs\assets\images\Weather_Dashboard_Screentshot_2.png' alt='Weather Dashboard Screenshot Two'>
 
 ## APIs Used
 OpenWeatherMap API
